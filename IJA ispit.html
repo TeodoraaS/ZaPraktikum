@@ -1,0 +1,273 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<style>
+	body{ 
+		margin:0;
+		font-family: "Open Sans";
+	}
+	
+	div.navigacija {
+		background: rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 0;
+		font-size: 1.1em;
+		display: table;
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	div.nav {
+		display: table-cell;
+		text-align:right;
+		padding: 20px 0;
+		vertical-align: middle;
+	}
+	div.logo {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	div.navigacija ul {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	div.navigacija li {
+		list-style-type: none;
+		display: inline-block;
+		text-align: right;
+		box-sizing: border-box;
+		padding: 10px 20px;
+	}
+	div.navigacija li:last-child {
+		padding-right: 10px;
+	}
+	div.navigacija a {
+		text-decoration:none;
+		color:white;
+	}	
+	div.navigacija a:hover	{
+		color:silver;
+	}
+	.hamburger{
+		display:none;
+	}
+	.mobile-nav{
+		display: none;
+	}
+	
+	div.sekcija{
+		background-position: center !important;
+		background-size: cover !important;
+	}
+	.kontejner{
+		padding: 80px 30px;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	
+	#footer{
+	background: #222222;
+	color:white;
+	}
+	
+	div.kolone{
+		display: table;
+	}
+	div.kolone div.kol{
+		display: table-cell;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	div.kolone2 div.kol{
+		width: 50%;
+	}
+	div.kolone3 div.kol{
+		width: 33.33%;
+	}
+	div.kolone4 div.kol{
+		width: 25%;
+	}
+	
+	.dugme{
+		background:black;
+		padding: 15px 20px;
+		color: white;
+		text-decoration: none;
+		border: 2px solid black;
+	}
+	
+	.dugme:hover {
+		background:white;
+		color: black;
+	}
+	
+	div#sekcija1 {
+		color: white;
+		background: url(sekcija1bg.jpg);
+		text-align: center;
+		padding-top: 100px;
+		font-size: 50px;
+	}
+	
+	div#sekcija1 .kontejner{
+		padding: 180px 30px;
+	}
+	
+	div#sekcija2 div.kol {
+		text-align: center;
+	}
+	
+	div#sekcija3 {
+		background: #6cbcea;
+		color: #fff;
+		text-align: center;
+	}
+	
+
+	
+	@keyframes setnja
+	{
+		from {top:-50px;}
+		to {top:0px;}
+	}
+
+	img.rotacija
+	{
+		position:relative;
+		animation:setnja 3s;
+		-moz-animation:setnja 3s;
+	}
+	
+	@media screen and (max-width: 980px) {
+		div#sekcija1 {
+			font-size: 25px;
+		}
+		div.kolone div.kol{
+			display: block;
+			width: 100%;
+		}
+	}
+	
+	@media screen and (max-width: 980px) {
+		div.nav {
+			display: none;
+		}
+		div.logo {
+			vertical-align: top;
+		}
+		.hamburger {
+			display: table-cell;
+			text-align: right;
+			padding-top: 25px;
+		}
+		.hamburger:hover .mobile-nav {
+			display: block;
+		}
+		div.navigacija li {
+			padding-right: 10px;
+		}
+	}
+	
+	</style>
+</head>
+
+<body>
+	<div class="navigacija">
+		<div class="logo"> 
+			<img src="krovLogo.png">
+		</div> 
+		<div class="nav">
+			<ul>
+				<li><a href=#>Pocetna</a></li>
+				<li><a href=#>O nama</a></li>
+				<li><a href=#>Nas tim</a></li>
+				<li><a href=#>Galerija</a></li>
+				<li><a href=#>Kontakt</a></li>
+			</ul>
+		</div>
+		
+		<div class="hamburger">
+			<img width="50px" src="ham.png">
+			<div class="mobile-nav">
+				<ul>
+					<li><a href=#>Pocetna</a></li>
+					<li><a href=#>O nama</a></li>
+					<li><a href=#>Nas tim</a></li>
+					<li><a href=#>Galerija</a></li>
+					<li><a href=#>Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+
+	<div id="sekcija1" class="sekcija">
+		<div class="kontejner">
+			<h2>Majstori koji ulivaju poverenje!</h2>
+			
+		</div>
+	</div>
+	
+	<div id="sekcija2" class="sekcija">
+		<div class="kontejner">
+			<div class="kolone kolone3">
+				<div class="kol">
+					<img class="rotacija" src="3.png">
+					<h3>Izrada krova</h3>
+					<p>Od izuzetne je važnosti, za bilo koju vrstu krova, da se pre svega izrađuje
+					od kvalitetnih materijala i da se prilikom projektovanja, a kasnije i izrade,
+					poštuju standardi.Zaštita krova u zavisnosti  o izboru crepa. </p>
+				</div>
+				<div class="kol">
+					<img class="rotacija" src="1.png">
+					<h3>Popravka krova</h3>
+					<p>Koristimo prirodni crep, proizvod bez hemijskih dodataka. On nudi brojne mogućnosti
+					dizajna i boja za sve oblike krovova. Sveobuhvatnim vrhunskim rešenjima za
+					krov osigurava zaštitu i sigurnost kao i energetsku efikasnost.</p>
+				</div>
+				<div class="kol">
+					<img class="rotacija" src="2.png">
+					<h3>Zastita krova</h3>
+					<p>Neke situacije su viša sila i na njih ne možemo uticati, no s pravilno
+					ugrađenim sistemima za zaštitu od nevremena, za svoj krov, napravili
+					ste najviše moguće kako biste sprečili štetne posledice nevremena.
+
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="sekcija3" class="sekcija">
+		<div class="kontejner">
+			<h2>Mi smo uvek tu za vas! Najbolja izrada i kvalitetni materijali!</h2><br>
+			<p><a class="dugme" href="kontakt.html">Kontaktirajte nas</a></p>
+		</div>
+	</div>
+	
+	<div id="sekcija4" class="sekcija">
+		<div class="kontejner">
+			<div class="kolone kolone2">
+				<div class="kol">
+					<img src"nesto.jpg">
+					<h3>Lorem ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="kol">
+					<img style="width:100%" src="img1.jpeg">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="kontejner">
+			<p>© Magic Roofs | Sva prava zadrzana.</p>
+		</div>
+	</div>
+
+</body>
+</html>

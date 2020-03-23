@@ -1,0 +1,258 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<style>
+	body{ 
+		margin:0;
+		font-family: "Open Sans";
+	}
+	
+	div.navigacija {
+		background: rgba(0, 0, 0, 0.3);
+		position: fixed;
+		top: 0;
+		font-size: 1.1em;
+		display: table;
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	div.nav {
+		display: table-cell;
+		text-align:right;
+		padding: 20px 0;
+		vertical-align: middle;
+	}
+	div.logo {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	div.navigacija ul {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	div.navigacija li {
+		list-style-type: none;
+		display: inline-block;
+		text-align: right;
+		box-sizing: border-box;
+		padding: 10px 20px;
+	}
+	div.navigacija li:last-child {
+		padding-right: 10px;
+	}
+	div.navigacija a {
+		text-decoration:none;
+		color:white;
+	}	
+	div.navigacija a:hover	{
+		color:silver;
+	}
+	.hamburger{
+		display:none;
+	}
+	.mobile-nav{
+		display: none;
+	}
+	
+	div.sekcija{
+		background-position: center !important;
+		background-size: cover !important;
+	}
+	.kontejner{
+		padding: 80px 30px;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+	
+	#footer{
+	background: #222222;
+	color:white;
+	}
+	
+	div.kolone{
+		display: table;
+		width: 100%;
+	}
+	div.kolone div.kol{
+		display: table-cell;
+		padding: 0 20px;
+		box-sizing: border-box;
+		vertical-align: top;
+	}
+	div.kolone2 div.kol{
+		width: 50%;
+	}
+	div.kolone3 div.kol{
+		width: 33.33%;
+	}
+	div.kolone4 div.kol{
+		width: 25%;
+	}
+	
+	.dugme{
+		background:black;
+		padding: 15px 20px;
+		color: white;
+		text-decoration: none;
+		border: 2px solid black;
+	}
+	
+	.dugme:hover {
+		background:white;
+		color: black;
+	}
+	
+	.tekstualno-polje,
+	.viseredno-tekstualno-polje {
+		width: 100%;
+		padding: 12px;
+		box-sizing: border-box;
+	}
+	.forma-dugme {
+		color:white;
+		background:#6cbcea;
+		padding: 10 15px;
+	}
+	
+	div#sekcija1 {
+		padding-top: 100px;
+	}
+	
+	div#sekcija2 {
+		background: #6cbcea;
+		color: #fff;
+		text-align: center;
+	}
+	
+
+	
+	@keyframes setnja
+	{
+		from {top:-50px;}
+		to {top:0px;}
+	}
+
+	img.rotacija
+	{
+		position:relative;
+		animation:setnja 3s;
+		-moz-animation:setnja 3s;
+	}
+	
+	@media screen and (max-width: 980px) {
+		div#sekcija1 {
+			font-size: 25px;
+		}
+		div.kolone div.kol{
+			display: block;
+			width: 100%;
+		}
+	}
+	
+	@media screen and (max-width: 980px) {
+		div.nav {
+			display: none;
+		}
+		div.logo {
+			vertical-align: top;
+		}
+		.hamburger {
+			display: table-cell;
+			text-align: right;
+			padding-top: 25px;
+		}
+		.hamburger:hover .mobile-nav {
+			display: block;
+		}
+		div.navigacija li {
+			padding-right: 10px;
+		}
+	}
+	
+	</style>
+</head>
+
+<body>
+	<div class="navigacija">
+		<div class="logo"> 
+			<img src="krovLogo.png">
+		</div> 
+		<div class="nav">
+			<ul>
+				<li><a href="Pocetna.html">Pocetna</a></li>
+				<li><a href="Onama.html">O nama</a></li>
+				<li><a href="Nastim.html">Nas tim</a></li>
+				<li><a href="Galerija.html">Galerija</a></li>
+				<li><a href="Kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+		
+		<div class="hamburger">
+			<img width="50px" src="ham.png">
+			<div class="mobile-nav">
+				<ul>
+					<li><a href="Pocetna.html">Pocetna</a></li>
+					<li><a href="Onama.html">O nama</a></li>
+					<li><a href="Nastim.html">Nas tim</a></li>
+					<li><a href="Galerija.html">Galerija</a></li>
+					<li><a href="Kontakt.html">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</div> 
+
+	<div id="sekcija1" class="sekcija">
+		<div class="kontejner">
+			<div class="kolone kolone2">
+				<div class="kol">
+					<h2>Kontaktirajte nas</h2>
+					<p>
+						<form name="obrazac">
+							<p>Ime: <br><input class="tekstualno-polje" type="text" name="ime" size="30"></p>
+							<p>Prezime:<br><input class="tekstualno-polje" type="text" name="prezime" size="30"></p>
+							<p>Poruka:<br>
+							<textarea class="viseredno-tekstualno-polje" name="viseredno" rows="5" cols="60"></textarea></p>
+							<p><input class="forma-dugme" type="submit" value="Prosledi">
+							<input class="forma-dugme" type="reset" value="Ponisti"></p>
+						</form>
+					</p>
+				</div>
+				<div class="kol">
+					<img style="width:100%" src="img1.jpeg">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="sekcija2" class="sekcija">
+		<div class="kontejner">
+			<div class="kolone kolone4">
+				<div class="kol">
+					<a href="https://www.facebook.com/"></a><img class="rotacija" src="face.png">
+				</div>
+				<div class="kol">
+					<a href="https://www.instagram.com/"><img class="rotacija" src="insta.png">
+				</div>
+				<div class="kol">
+					<a href="https://twitter.com/"><img class="rotacija" src="twitter.png">
+				</div>
+				<div class="kol">
+					<a href="https://mail.google.com/"><img class="rotacija" src="mail.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="kontejner">
+			<p>© Magic Roofs | Sva prava zadrzana.</p>
+		</div>
+	</div>
+
+</body>
+</html>

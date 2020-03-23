@@ -1,0 +1,157 @@
+body{ 
+	margin:0;
+	font-family: "Open Sans";
+}
+
+div.navigacija {
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	top: 0;
+	font-size: 1.1em;
+	display: table;
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+div.nav {
+	display: table-cell;
+	text-align:right;
+	padding: 20px 0;
+	vertical-align: middle;
+}
+div.logo {
+	display: table-cell;
+	vertical-align: middle;
+}
+div.navigacija ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+div.navigacija li {
+	list-style-type: none;
+	display: inline-block;
+	text-align: right;
+	box-sizing: border-box;
+	padding: 10px 20px;
+}
+div.navigacija li:last-child {
+	padding-right: 10px;
+}
+div.navigacija a {
+	text-decoration:none;
+	color:white;
+}	
+div.navigacija a:hover	{
+	color:silver;
+}
+.hamburger{
+	display:none;
+}
+.mobile-nav{
+	display: none;
+}
+
+div.sekcija{
+	background-position: center !important;
+	background-size: cover !important;
+}
+.kontejner{
+	padding: 80px 30px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+#footer{
+background: #222222;
+color:white;
+}
+
+div.kolone{
+	display: table;
+	width: 100%;
+}
+div.kolone div.kol{
+	display: table-cell;
+	padding: 0 20px;
+	box-sizing: border-box;
+	vertical-align: top;
+}
+div.kolone2 div.kol{
+	width: 50%;
+}
+div.kolone3 div.kol{
+	width: 33.33%;
+}
+div.kolone4 div.kol{
+	width: 25%;
+}
+
+.dugme{
+	background:black;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+	border: 2px solid black;
+}
+
+.dugme:hover {
+	background:white;
+	color: black;
+}
+
+.tekstualno-polje,
+.viseredno-tekstualno-polje {
+	width: 100%;
+	padding: 12px;
+	box-sizing: border-box;
+}
+.forma-dugme {
+	color:white;
+	background:#6cbcea;
+	padding: 10 15px;
+}
+
+@keyframes setnja
+{
+	from {top:-50px;}
+	to {top:0px;}
+}
+
+img.rotacija
+{
+	position:relative;
+	animation:setnja 3s;
+	-moz-animation:setnja 3s;
+}
+
+@media screen and (max-width: 980px) {
+	div#sekcija1 {
+		font-size: 25px;
+	}
+	div.kolone div.kol{
+		display: block;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	div.nav {
+		display: none;
+	}
+	div.logo {
+		vertical-align: top;
+	}
+	.hamburger {
+		display: table-cell;
+		text-align: right;
+		padding-top: 25px;
+	}
+	.hamburger:hover .mobile-nav {
+		display: block;
+	}
+	div.navigacija li {
+		padding-right: 10px;
+	}
+}

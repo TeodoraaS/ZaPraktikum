@@ -1,0 +1,21 @@
+div#sekcija1 {
+	color: white;
+	background: url(sekcija1bg.jpg);
+	text-align: center;
+	padding-top: 100px;
+	font-size: 50px;
+}
+
+div#sekcija1 .kontejner{
+	padding: 180px 30px;
+}
+
+div#sekcija2 div.kol {
+	text-align: center;
+}
+
+div#sekcija3 {
+	background: #6cbcea;
+	color: #fff;
+	text-align: center;
+}
